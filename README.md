@@ -1,21 +1,20 @@
-EventSpot Lite :
+# **EventSpot Lite**
 
-EventSpot Lite is a responsive single-page web application that allows users to view and search for events. The application features a dark mode, an event modal for detailed information, created with ReactJs.
+**EventSpot Lite** is a responsive single-page web application that allows users to view and search for events. The application features a dark mode, an event modal for detailed information, created with ReactJs.
 
-A live demo of the application can be accessed at event-spotlight-ih4ouokhl-vishal12321gits-projects.vercel.app
+A live demo of the application can be accessed at [EventSpot Lite Demo](https://event-spotlight-ih4ouokhl-vishal12321gits-projects.vercel.app/).
 
-Features :
+## Features
+1. Search functionality for events
+2. Dark mode toggle
+3. Event details modal with images
+4. Responsive design for various screen sizes
 
-Search functionality for events
-Dark mode toggle
-Event details modal with images
-Responsive design for various screen sizes
-
-Setup Instructions :
-
+## Setup Instructions
 To set up the EventSpot Lite application locally, follow these steps:
-git clone https://github.com/vishal12321git/Event__Spotlight.git
-cd EventSpot-Lite
-npm install
-npm start
-Open your browser and go to: http://localhost:3000
+
+1. `git clone https://github.com/vishal12321git/Event__Spotlight.git`
+2. `cd EventSpot-Lite`
+3. `npm install`
+4. `npm start`
+5. Open your browser and go to: http://localhost:3000
