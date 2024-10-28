@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #007BFF; /* Light mode navbar color */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.event-card {
+  background: #f8f9fa; /* Light mode card background */
+  padding: 20px;
+  border-radius: 5px;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white; /* Light mode modal background */
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.close-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1e1e1e; /* Dark background for the app */
+  color: #ffffff; /* Light text color */
+}
+
+.dark-mode .navbar {
+  background: #333; /* Dark navbar color */
+}
+
+.dark-mode .event-card {
+  background: #2a2a2a; /* Dark card background */
+  color: #ffffff; /* Light text color for cards */
+}
+
+.dark-mode .modal-content {
+  background: #2c2c2c; /* Dark modal background */
+  color: #ffffff; /* Light text color for modal */
+}
+
+.dark-mode .loading-spinner {
+  color: #ffffff; /* Light text color for loading spinner */
+}

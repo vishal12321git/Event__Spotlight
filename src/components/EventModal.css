@@ -1,0 +1,59 @@
+/* src/components/EventModal.css */
+
+.modal-overlay {
+    position: fixed; /* Overlay covers the entire screen */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    z-index: 1000; /* Ensure overlay is above other content */
+}
+  
+.modal-content {
+    background: #fff; /* White background for the modal */
+    padding: 20px; /* Padding inside the modal */
+    border-radius: 8px; /* Rounded corners */
+    width: 90%; /* Default width */
+    max-width: 500px; /* Maximum width */
+    position: relative; /* Position for absolute children */
+    text-align: center; /* Center text */
+}
+  
+.close-button {
+    position: absolute; /* Position relative to modal content */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    background: #ff5c5c; /* Red background */
+    border: none; /* No border */
+    color: white; /* White text */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 30px; /* Button width */
+    height: 30px; /* Button height */
+    transition: background 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+.close-button:hover {
+    background: #ff7878; /* Change color on hover */
+}
+  
+.close-button:active {
+    transform: scale(0.9); /* Scale down when clicked */
+}
+  
+.modal-image {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 15px; /* Adjust padding on small screens */
+        width: 100%; /* Full width on small screens */
+    }
+}

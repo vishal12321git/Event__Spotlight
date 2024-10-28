@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding around the navbar */
+    background-color: #333; /* Dark background for navbar */
+    color: #fff; /* White text color */
+}
+  
+.navbar h1 {
+    font-size: 1.5rem; /* Font size for the title */
+}
+  
+.navbar-search {
+    padding: 5px; /* Padding for the search input */
+    font-size: 1rem; /* Font size for the input text */
+    width: 50%; /* Default width */
+    max-width: 300px; /* Maximum width */
+}
+  
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 1.2rem; /* Smaller font size on medium screens */
+    }
+    .navbar-search {
+        width: 70%; /* Wider search input on smaller screens */
+    }
+}
+  
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Space between items */
+    }
+    .navbar-search {
+        width: 100%; /* Full width for search input */
+    }
+}
+
+.event-list {
+    display: flex; /* Use flexbox for the event list */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between each card */
+    justify-content: space-evenly; /* Ensure equal spacing across the row */
+    padding: 20px; /* Adds padding around the list */
+}
+  
+@media (max-width: 768px) {
+    .event-list {
+        justify-content: center; /* Center-align cards on smaller screens */
+    }
+}
+  
+@media (max-width: 480px) {
+    .event-list {
+        justify-content: center; /* Center-align cards on extra small screens */
+        gap: 15px; /* Adjust the gap for smaller screens */
+    }
+}

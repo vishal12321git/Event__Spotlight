@@ -1,0 +1,67 @@
+/* src/components/EventCard.css */
+
+.event-card {
+    background: #f8f9fa; /* Light mode background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.event-card.dark-mode {
+    background: #444; /* Dark mode background */
+    color: #fff; /* White text in dark mode */
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.event-image {
+    width: 100%;
+    height: 150px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    border-radius: 5px; /* Slightly rounded corners for the image */
+}
+
+.event-card h2 {
+    font-size: 1.25em;
+    margin: 10px 0 5px;
+    color: inherit; /* Use inherited color for h2 */
+}
+
+.event-card p {
+    margin: 5px 0;
+    color: inherit; /* Use inherited color for paragraphs */
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-card {
+        width: 100%;
+    }
+}
+
+.clickable {
+    transition: transform 0.1s ease;
+}
+
+.clickable:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clicked {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
